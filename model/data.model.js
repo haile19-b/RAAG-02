@@ -6,7 +6,7 @@ const DataSchema = new mongoose.Schema({
         required:[true,"data in text is required!"],
         trim:true
     },
-    embedded:{
+    embedding:{
         type:[Number],
         required:[true,"embedded data is required!"],
         trim:true
