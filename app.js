@@ -1,6 +1,7 @@
 import express from "express"
 import dotenv from "dotenv"
 import { ConnectDB } from "./lib/db.js";
+import { embeddingRoure } from "./route/embedding.js";
 
 dotenv.config();
 
@@ -16,6 +17,8 @@ app.get('/',(req,res)=>{
         successe:true
     })
 })
+
+app.use('/embedding',embeddingRoure)
 
 
 app.listen(PORT,async()=>{
