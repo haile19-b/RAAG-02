@@ -19,6 +19,7 @@ app.get('/',(req,res)=>{
 })
 
 app.use('/embedding',embeddingRoure)
+// app.use('/ai',AiRoute)
 
 
 app.listen(PORT,async()=>{
